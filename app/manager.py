@@ -12,6 +12,15 @@ class FinanceManager:
     
     
     def get_balance(self):
+        income = 0
+        expenses = 0
+
+        for t in self.transactions:
+            if t.type == "income":
+                income += t.amount
+            elif t.type == "expense":
+                expenses += t.amount
+        
         return self.get_income() - self.get_expences()
 
 

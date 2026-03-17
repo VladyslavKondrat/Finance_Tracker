@@ -1,4 +1,4 @@
-import manager
+from manager import FinanceManager
 class Transaction:
     def __init__(self, amount, category, type, date, description):
         self.amount = amount
@@ -19,9 +19,9 @@ class Transaction:
 
 
     def from_dictionary(self):
-        pass
+        
 
 
 
-t1 = Transaction(1000, "salary", "income", "2026-03-01", "monthly salary")
-manager.add_transactions(t1)
+# t1 = Transaction(1000, "salary", "income", "2026-03-01", "monthly salary")
+# FinanceManager.add_transaction(t1)
