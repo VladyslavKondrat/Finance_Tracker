@@ -5,7 +5,7 @@ def save_data(transactions, file_name = "data.json"):
     data = []
 
     for n in transactions:
-        data.append(n.to_dict())
+        data.append(n.to_dictionary())
 
     with open(file_name, 'w') as file:
         json.dump(data, file, indent = 4)
